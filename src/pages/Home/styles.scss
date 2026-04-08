@@ -17,38 +17,22 @@
   width: 70%;
   margin: 40px 90px 0 0;
   max-height: 850px;
+}
+
+.repositories {
+  display: flex;
+  flex-direction: column;
+  max-height: 580px;
   overflow-y: auto;
-}
 
-input {
-  width: 80%;
-  padding: 10px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
 
-  margin-right: 10px;
-
-  background-color: #33383e;
-  color: #999;
-
-  border-radius: 30px;
-  border: 1px solid #6c6c6c;
-
-  font-size: 20px;
-}
-
-button {
-  width: 10%;
-  padding: 10px 20px;
-
-  font-size: 20px;
-
-  background-color: #33383e;
-  color: #999;
-  border-radius: 30px;
-  border: 1px solid #6c6c6c;
-  
-  &:hover{
-    background-color: #33383e90;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
+  & h3 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
   }
 }

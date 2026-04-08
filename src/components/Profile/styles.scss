@@ -1,0 +1,31 @@
+.profile {
+  display: flex;
+  margin: 50px 0;
+
+  & img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 3px solid #e5e5e5;
+    margin-right: 35px;
+  }
+
+  & .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  & h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  & span {
+    font-size: 16px;
+  }
+
+  & p {
+    font-size: 18px;
+  }
+}
