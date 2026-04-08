@@ -1,10 +1,10 @@
 import "./styles.scss";
 
-const RepositoriesList = ({ title, description }) => {
+const RepositoriesList = ({ repo }) => {
   return (
     <div className="item-list">
-      <h4>{title}</h4>
-      <p>{description}</p>
+      <h4>{repo.name}</h4>
+      <p>{repo.description}</p>
       <hr />
     </div>
   );

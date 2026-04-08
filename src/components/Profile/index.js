@@ -1,19 +1,20 @@
 import "./styles.scss";
 
-const Profile = () => {
+const Profile = ({user}) => {
+
   return (
     <>
       <div className="profile">
         <img
-          src="https://avatars.githubusercontent.com/u/48837857?v=4"
+          src={user.avatar_url}
           alt="foto perfil"
         />
         <div className="texts">
           <div>
-            <h3>Ivo Emanuel Tana</h3>
-            <span>@ivoetana</span>
+            <h3>{user.name || "## Nome não informado ##"}</h3>
+            <span>@{user.login}</span>
           </div>
-          <p>Full Stack Developer web and mobile, passionate to javascriptand all your ecosystem.</p>
+          <p>{user.bio}</p>
         </div>
       </div>
       <hr />
